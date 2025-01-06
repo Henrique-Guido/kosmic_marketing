@@ -23,7 +23,7 @@ body {
 
 #header-contact-bar ul li {
     display: inline;
-    padding: 0 8px;
+    padding-right: 8px;
 }
 
 #header-contact-bar ul li a {

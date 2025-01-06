@@ -1,3 +1,4 @@
+#imports
 from main import app, render_template
 
 #routes
@@ -6,14 +7,19 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/about.html")
-def about():
-    return render_template("about.html")
-
-
 @app.route("/portfolio.html")
 def portfolio():
     return render_template("portfolio.html")
+
+
+@app.route("/services.html")
+def services():
+    return render_template("/services.html")
+
+
+@app.route("/about.html")
+def about():
+    return render_template("about.html")
     
 
 @app.route("/contact.html")
