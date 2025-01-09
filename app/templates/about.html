@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Project - About</title>
-</head>
-<body>
-    <h1>About the project</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nihil et, tempore sequi possimus totam sint. Inventore voluptate vitae corporis.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nihil et, tempore sequi possimus totam sint. Inventore voluptate vitae corporis.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nihil et, tempore sequi possimus totam sint. Inventore voluptate vitae corporis.</p>
-    <p><a href="{{ url_for('about') }}">About</a></p>
-    <p><a href="{{ url_for('index') }}">Home</a></p>
-</body>
-</html>
+{% extends "base.html" %}
+
+<!-- title -->
+{% block title %} {{ pageTitle }} {% endblock %}
+
+<!-- content -->
+{% block content %}
+
+<h2>Check out our services!</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci beatae porro laudantium rerum voluptatem optio.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus fuga eaque illum, consectetur dicta.</p>
+<ul>
+    <li>Lorem ipsum dolor sit.</li>
+    <li>Lorem, ipsum.</li>
+    <li>Lorem ipsum dolor sit.</li>
+    <li>Lorem ipsum dolor sit amet consectetur.</li>
+</ul>
+
+{% endblock %}

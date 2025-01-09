@@ -1,7 +1,7 @@
-#imports
+# imports
 from flask import Flask, render_template
 
-#application
+# application
 app = Flask(__name__)
 
 from routes import *
