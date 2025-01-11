@@ -6,14 +6,11 @@
 <!-- content -->
 {% block content %}
 
-<h2>Check out our services!</h2>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci beatae porro laudantium rerum voluptatem optio.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus fuga eaque illum, consectetur dicta.</p>
-<ul>
-    <li>Lorem ipsum dolor sit.</li>
-    <li>Lorem, ipsum.</li>
-    <li>Lorem ipsum dolor sit.</li>
-    <li>Lorem ipsum dolor sit amet consectetur.</li>
-</ul>
+<main>
+    <span id="main-greeting">Bem vindo à <strong id="kosmic-main">Kosmic</strong></span>
+    <h1>Marketing Digital</h1>
+    <p>Aumente suas vendas, fortaleça sua marca e conquiste o mercado com a Kosmic. Entre em contato conosco agora e veja como podemos transformar sua presença na internet!</p>
+    <a href="{{ url_for('about') }}">Saiba mais</a>
+</main>
 
 {% endblock %}
